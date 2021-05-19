@@ -15,3 +15,8 @@ phases:
     commands:
       - echo "Nothing to do in the post_build for now"
       - rm buildspec.yml
+
+artifacts:
+  files:
+    - '**/*'
+  name: build_output
