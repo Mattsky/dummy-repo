@@ -1,0 +1,17 @@
+version: 0.2
+
+#env:
+#  variables:
+#    key: "value"
+#    key: "value"
+
+phases:
+  build:
+    commands:
+      - echo "Today's secret:" >> index.html
+      - echo " " >>
+      - echo "$FAKE_VAR" >> index.html
+  post_build:
+    commands:
+      - echo "Nothing to do in the post_build for now"
+      - rm buildspec.yml
