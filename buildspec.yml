@@ -1,15 +1,10 @@
 version: 0.2
 
-#env:
-#  variables:
-#    key: "value"
-#    key: "value"
-
 phases:
   build:
     commands:
-      - echo "Today's secret:" >> index.html
-      - echo " " >> index.html
+      - echo "<br>Today's secret:<br>" >> index.html
+      - echo "<br>" >> index.html
       - echo "$FAKE_VAR" >> index.html
   post_build:
     commands:
